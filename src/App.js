@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { ROUTES } from './utils/routes';
+
+import styles from './scss/App.module.scss';
+
+import Footer from './components/Footer';
+import Header from './components/Header';
+import QuestionCard from './components/QuestionCard';
+import QuestionForm from './pages/QuestionForm';
+import Map from './pages/Map';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className={styles.wrapper}>
+            <Router>
+                <Header />
+                <main className={styles.main}>
+                    <Routes>
+                        <Route path={ROUTES.HOME} element={<QuestionCard />} />
+                        <Route path={ROUTES.FORM} element={<QuestionForm />} />
+                        <Route path={ROUTES.MAP} element={<Map />} />
+                    </Routes>
+                </main>
+
+                <Footer />
+            </Router>
+        </div>
+    );
 }
 
 export default App;

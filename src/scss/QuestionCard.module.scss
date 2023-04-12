@@ -1,0 +1,23 @@
+.questionCard {
+    background-color: #f0e3f4;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text {
+    margin-bottom: 30px;
+}
+.activeLink {
+    background-color: #891d57a7;
+    color: #fff;
+    padding: 15px 70px;
+    border-radius: 6px;
+}
+.normalLink {
+    background-color: #891d56;
+    color: #fff;
+    padding: 15px 70px;
+    border-radius: 6px;
+}

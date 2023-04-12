@@ -1,0 +1,42 @@
+header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #acacb0;
+
+    .search {
+        height: 30px;
+        margin-right: 100px;
+    }
+}
+.logo {
+    width: 80px;
+    margin: 20px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    padding: 0px 0.5vw;
+
+    .navItem {
+        padding: 0 20px 0 20px;
+    }
+    .activeLink {
+        color: #000;
+        &:hover {
+            color: rgb(79, 79, 79);
+            transition: 200ms ease-in-out;
+        }
+    }
+
+    .activeLink--active {
+        font-weight: 700;
+    }
+}
+@media (max-width: 600px) {
+    .nav {
+        display: none;
+    }
+}

@@ -1,0 +1,33 @@
+.section {
+    position: relative;
+}
+.map {
+    display: block;
+    margin: 100px auto;
+    max-width: 1120px;
+    width: 70%;
+}
+
+.mark1,
+.mark2 {
+    fill: #891d56;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    :hover {
+        transition: all 0.3s ease-out;
+        transform: scale(1.2);
+    }
+}
+
+.mark2 {
+    fill: #a7a7ab;
+}
+
+@media (max-width: 600px) {
+    .mark1,
+    .mark2 {
+        width: 20px;
+        height: 20px;
+    }
+}

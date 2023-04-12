@@ -1,0 +1,37 @@
+.navigation,
+.icon,
+.menu {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .icon {
+        display: block;
+        width: 30px;
+    }
+    .mobileBtn {
+        display: block;
+        position: absolute;
+        left: 85%;
+
+        cursor: pointer;
+        z-index: 10;
+    }
+    .menu {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        width: 100%;
+        left: 60%;
+        top: 100px;
+        height: 100vh;
+        background-color: #891d5789;
+        z-index: 10;
+        transition: left 1s;
+    }
+    .li {
+        margin-top: 30px;
+        margin-left: 30px;
+        font-size: 30px;
+    }
+}

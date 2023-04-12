@@ -1,0 +1,53 @@
+.container {
+    position: absolute;
+    top: 67%;
+    left: 79%;
+}
+.tooltip {
+    position: absolute;
+    top: -150%;
+    left: 50%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 6px;
+    z-index: 1;
+    box-shadow: 4px 4px 8px 1px rgba(34, 60, 80, 0.2);
+    h2 {
+        color: #891d56;
+        font-weight: bold;
+    }
+}
+@media (max-width: 1400px) {
+    .tooltip {
+        padding: 1.5vw;
+        top: -100%;
+        left: 150%;
+        font-size: 1.5vw;
+    }
+}
+@media (max-width: 1200px) {
+    .container {
+        top: 67%;
+        left: 79%;
+    }
+    .tooltip {
+        top: -100%;
+        left: 100%;
+    }
+}
+@media (max-width: 900px) {
+    .container {
+        top: 67%;
+        left: 79%;
+    }
+    .tooltip {
+        top: -100%;
+        left: -100%;
+    }
+}
+@media (max-width: 600px) {
+    .container {
+        top: 67%;
+        left: 79%;
+    }
+}
